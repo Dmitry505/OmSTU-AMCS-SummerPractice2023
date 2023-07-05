@@ -1,11 +1,12 @@
 name: broken
 
 on:
-  push
+  push:
+    branches: ["broken/solution"]
 
 jobs:
   build:
-    runs-on: broken/solution
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
